@@ -1,1 +1,1 @@
-the new project templates has been setup. pls ensure you pull the latest version before working on the project.lets get this done team.
+the new project templates has been setup. pls ensure you pull the latest version before working on the project and push to remote branch repo when you hav completed your work.lets get this done team.
