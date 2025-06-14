@@ -4,7 +4,44 @@
     box-sizing: border-box;
 }
 
-header{
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+.logo{
+    display: flex;
+    background-color: rgb(173, 2, 173);
+
+     background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+      padding: 20px 20px;
+      display: flex;
+      justify-content:space-between;
+      align-items:flex-end;
+}
+
+.logo h1 { 
+      margin: 0;
+      color:#ffAA1D;
+    }
+nav a {
+      color:#ffAA1D;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size:larger;
+     transition: color 0.3s ease; /* smooth color transition */
+    }
+    nav a:hover{
+        color: #f9f9f9;
+        text-decoration : underline;
+    }
+
+.head{
     display: flex;
     flex-direction: column;
     margin: 50px;
@@ -14,7 +51,7 @@ header{
 .starter{
     text-align: center;
     padding: 20px;
-    background-color: #f8f5ee;
+    /* background-color: #f8f5ee; */
 }
 
 .starter h1{
@@ -29,8 +66,18 @@ header{
 .starter p{
     /* margin: 20px; */
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.starter h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: "proxima-nova", "Helvetica Neue",  sans-serif;
+    font-weight: 1000;
+    /* margin-bottom: 10px; */
+    color: #fcb13e;
 }
 
 .facts{
@@ -136,4 +183,119 @@ main section p{
     font-size: 40px;
     color: #92278f;
     text-transform: capitalize;
+}
+
+footer {
+      background-color: rgb(173, 2, 173);
+      color: #ffAA1D;
+      text-align: center;
+      padding: 20px;
+}
+
+section{
+    background-color: #f8f5ee;
+    padding: 60px 40px;
+    text-align: center;
+    }
+    .preview p {
+      max-width: 600px;
+      margin: 15px auto 15px;
+    } 
+    .preview a {
+       color: rgb(173, 2, 173);
+      text-decoration: none;
+      font-weight: bold;
+    }
+/* ========== RESPONSIVE STYLES ========== */
+@media (max-width: 1024px) {
+  main section {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  main section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .facts {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .facts div {
+    margin: 20px 0;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .testimonials div {
+    width: 90%;
+  }
+
+  .values {
+    grid-template-columns: 1fr;
+    margin: 30px 10px;
+  }
+
+  .values div {
+    width: 100%;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+
+  .starter h1 {
+    font-size: 36px;
+  }
+
+  .starter h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    width: 70px;
+  }
+
+  main section h3 {
+    font-size: 28px;
+  }
+
+  main section p,
+  .values div p,
+  .testimonials p {
+    font-size: 16px;
+  }
+
+  .values h1 {
+    font-size: 28px;
+  }
+
+  .starter h1 {
+    font-size: 28px;
+  }
+
+  .starter p {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 15px;
+  }
 }
