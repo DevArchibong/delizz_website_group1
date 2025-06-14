@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,4 +19,413 @@
     <p>Discover our amazing services and offerings.</p>
   </main>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delizz Supermarket</title>
+  <!-- <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header{
+      background-color: rgb(173, 2, 173);
+      color:#ffAA1D;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      color:#ffAA1D;
+    }
+
+    .logo{
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    img{
+        border-radius: 50%;
+        height: 100px;
+        width: 100x;
+        
+        
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?grocery,supermarket') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffAA1D;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+      padding: 0 20px;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .category-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+    }
+    .cta {
+      background-color:  rgb(173, 2, 173);;
+      color: white;
+      padding: 40px 20px;
+    }
+    .cta a {
+      background: rgb(173, 2, 173);
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 15px;
+    }
+    .preview p {
+      max-width: 600px;
+      margin: 0 auto 15px;
+    }
+    .preview a {
+      color: rgb(173, 2, 173);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background-color: rgb(173, 2, 173);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 768px) {
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style> -->
+</head>
+
+<style>
+     body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    /* header{
+      background-color: rgb(173, 2, 173);
+      color:#ffAA1D;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; */
+.logo{
+    display: flex;
+    background-color: rgb(173, 2, 173);
+
+     background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+      padding: 20px 20px;
+      display: flex;
+      justify-content:space-between;
+      align-items:flex-end;
+}
+.logo h1 { 
+      margin: 0;
+      color:#ffAA1D;
+    }
+nav a {
+      color:#ffAA1D;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size:larger;
+     transition: color 0.3s ease; /* smooth color transition */
+    }
+    nav a:hover{
+        color: #f9f9f9;
+        text-decoration : underline;
+    }
+    img{
+        border-radius: 50%;
+        height: 100px;
+        width: 100x;
+       
+    }
+    .hero {
+      background:url(resources/delizz_bgimage.jpg);
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: whitesmoke;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+      padding: 0 20px;
+       background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden; /* to keep the overlay inside the div */
+    }
+
+    .hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* adjust opacity as needed */
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .category-card {
+      
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      width: 200px;
+      height: 150PX;
+      text-align: center;
+    } 
+    
+    .preview p {
+      max-width: 600px;
+      margin: 0 auto 15px;
+    } 
+    .preview a {
+       color: rgb(173, 2, 173);
+      text-decoration: none;
+      font-weight: bold;
+    }
+      #card1 {
+    background-image:url(resources/vegetables_img.jpg);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+      }
+      #card2{
+        background-image:url(resources/dairy&eggs_img.jpg);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+      }
+
+     #card3{
+        background-image:url(resources/bread_img.jpg);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+     }
+
+     #card4{
+        background-image:url(resources/drinks_img.jpg);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+     }
+      #product1{
+        background-image:url(resources/pringles_img.jpg);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+      }
+      #produuct2{
+        background-image:url(resources/titus_img.png);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+      }
+      #product3{
+        background-image:url(resources/Snickers_img.jpg);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+      }
+      #product4{
+        background-image:url(resources/minimi_img.png);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+      }
+
+      footer {
+      background-color: rgb(173, 2, 173);
+      color: #ffAA1D;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 768px) {
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+</style>
+<body>
+
+  <header>
+    </header>
+
+    <section class="logo">
+        <div>
+        <img src="resources/delizz_logo.png" width="100px" alt="Delizz Logo">
+         <h1>Delizz Supermarket</h1>
+        </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    </section>
+  </header>
+
+  <section class="hero">
+    <div class="hero_h3">
+      <h2>Best Prices, Great Value</h2>
+      <h3>With Delizz,Your Shopping Experience is made Enjoyable</h3>
+      <h4>Doorstep delivery also available for your convenience</h4>
+
+    </div>
+  </section>
+<section class="section" id="categories">
+  <h2>Popular Categories</h2>
+  <div class="categories"> 
+    <div class="category-card" id="card1">
+      <h3>Fresh Produce</h3>
+      <p>Fruits & vegetables</p>
+    </div>
+    <div class="category-card" id="card2">
+      <h3>Dairy & Eggs</h3>
+      <p>Milk, cheese, and more</p>
+    </div>
+    <div class="category-card" id="card3">
+      <h3>Bakery</h3>
+      <p>Freshly baked every day</p>
+    </div>
+    <div class="category-card" id="card4">
+      <h3>Snacks & Drinks</h3>
+      <p>Quick bites & beverages</p>
+    </div>
+  </div>
+</section>
+<section class="section" id="categories">
+<h2>Top Selling Products</h2>
+  <div class="categories"> 
+    <div class="category-card" id="product1">
+      <h3>pringles</h3>
+    </div>
+    <div class="category-card" id="product2">
+      <h3>Titus</h3>
+    
+    </div>
+    <div class="category-card" id="product3">
+      <h3>Snicker</h3>
+    
+    </div>
+    <div class="category-card" id="product4">
+      <h3>Minimie chin chin</h3>
+    
+    </div>
+  </div>
+</section>
+
+  
+  <section class="section about-preview">
+    <h3>About Delizz</h3>
+    <div class="preview">
+      <p>Delizz is a modern supermarket dedicated to quality, convenience, and community. Serving you fresh and local since 2010.</p>
+      <a href="about.html">Learn more →</a>
+    </div>
+  </section>
+
+  <section class="section contact-preview">
+    <h3>Need Help?</h3>
+    <div class="preview">
+      <p>Questions about orders, delivery, or products? We're happy to help.</p>
+      <a href="contact.html">Contact Us →</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Delizz Supermarket. All rights reserved.</p>
+  </footer>
+</body>
+
 </html>
