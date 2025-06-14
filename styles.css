@@ -1,3 +1,191 @@
+/* Homepage css styles */
+     body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+.logo{
+    display: flex;
+    background-color: rgb(173, 2, 173);
+
+     background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+      padding: 20px 20px;
+      display: flex;
+      justify-content:space-between;
+      align-items:flex-end;
+}
+.logo h1 { 
+      margin: 0;
+      color:#ffAA1D;
+    }
+nav a {
+      color:#ffAA1D;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size:larger;
+     transition: color 0.3s ease; /* smooth color transition */
+    }
+    nav a:hover{
+        color: #f9f9f9;
+        text-decoration : underline;
+    }
+    img{
+        border-radius: 50%;
+        height: 100px;
+        width: 100x;
+       
+    }
+    .hero {
+      background:url(resources/delizz_bgimage.jpg);
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: whitesmoke;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+      padding: 0 20px;
+       background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden; /* to keep the overlay inside the div */
+    }
+
+    .hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* adjust opacity as needed */
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .category-card {
+      
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+    } 
+    
+    .preview p {
+      max-width: 600px;
+      margin: 0 auto 15px;
+    } 
+    .preview a {
+       color: rgb(173, 2, 173);
+      text-decoration: none;
+      font-weight: bold;
+    }
+      #card1 {
+    background-image:url(resources/vegetables_img.jpg);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+      }
+      #card2{
+        background-image:url(resources/dairy&eggs_img.jpg);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+      }
+
+     #card3{
+        background-image:url(resources/bread_img.jpg);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+     }
+
+     #card4{
+        background-image:url(resources/drinks_img.jpg);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+     }
+      #product1{
+        background-image:url(resources/pringles_img.jpg);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+      }
+      #product2{
+        background-image:url(resources/titus_img.png);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+      }
+      #product3{
+        background-image:url(resources/Snickers_img.jpg);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+      }
+      #product4{
+        background-image:url(resources/minimi_img.png);
+      background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center;
+     border: #333;
+     color: white;
+      }
+
+      footer {
+      background-color: rgb(173, 2, 173);
+      color: #ffAA1D;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 768px) {
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+
 /* styles.css */
 body {
   font-family: Arial, sans-serif;
@@ -6,7 +194,7 @@ body {
 }
 
 nav {
-  background-color: #333;
+  background-color: #d404d4;
   padding: 1rem;
 }
 
@@ -44,3 +232,4 @@ h1 {
 p {
   color: #666;
 }
+    }
