@@ -43,22 +43,32 @@ header{
 
 .facts div{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 main section{
     background-color: #92278f;
-    padding: 50px;
-    margin: 10px;
+    padding: 20px 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* flex-direction: column; */
+    color: white;
+    gap: 80px;
 }
 
 
 main section img{
-    width: 600px;
+    width: 520px;
     height: 350px;
-    border-radius: 15px;
+}
+
+main section h3{
+    text-transform: capitalize;
+    font-family: "proxima-nova", "Helvetica Neue",  sans-serif;
+    font-size: 35px;
+}
+
+main section p{
+    font-family: sans-serif;
+    font-size: 18px;
 }
