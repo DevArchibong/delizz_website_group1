@@ -4,21 +4,17 @@
     box-sizing: border-box;
 }
 
-body ul{
-    border: 3px, solid, black;
-    list-style: none;
-    display: flex;
-}
-
 header{
     display: flex;
     flex-direction: column;
-    margin: 80px;
+    margin: 50px;
+    background-color: #f8f5ee;
 }
 
 .starter{
     text-align: center;
-    margin: 20px;
+    padding: 20px;
+    background-color: #f8f5ee;
 }
 
 .starter h1{
@@ -26,14 +22,15 @@ header{
     font-size: 50px;
     font-family: "proxima-nova", "Helvetica Neue",  sans-serif;
     font-weight: 1000;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     color: #fcb13e;
 }
+
 .starter p{
     /* margin: 20px; */
     font-family: sans-serif;
     font-size: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 .facts{
@@ -43,7 +40,7 @@ header{
 
 .facts div{
     text-align: center;
-    margin-bottom: 20px;
+    margin: 70px 20px;
 }
 
 main section{
@@ -71,4 +68,72 @@ main section h3{
 main section p{
     font-family: sans-serif;
     font-size: 18px;
+}
+
+.testimonials{
+    background-color: #f8f5ee;
+    display: flex;
+    justify-content: center;   /* center the cards horizontally */
+    align-items: center;  
+    padding: 20px;
+    gap: 40px;
+    /* width: 1000px; */
+}
+
+.testimonials img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.testimonials div{
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 650px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.testimonials h4{
+    text-transform: capitalize;
+}
+
+.values{
+    margin: 60px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+    background-color: #f8f5ee;
+}
+
+.values div{
+    border-radius: 20px 1px;
+    padding: 15px;
+    width: 500px;
+    height: 150px;
+    border: 1px solid grey;
+    justify-content: center;
+    background-color: #92278f;
+    color: white;
+}
+
+.values div h5{
+    font-family: sans-serif;
+    font-size: 22px;
+
+}
+
+.values div p{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.values h1{
+    align-content: center;
+    font-size: 40px;
+    color: #92278f;
+    text-transform: capitalize;
 }
